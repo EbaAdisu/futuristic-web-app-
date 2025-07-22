@@ -1,0 +1,14 @@
+[build]
+# Specify the build environment and commands
+builder = "nodejs"
+
+# Define the build command
+command = "pnpm install && pnpm build"
+
+[run]
+# Specify the runtime environment and commands
+command = "pnpm start"
+
+[static]
+# Define static files to serve (if applicable)
+path = "public"
