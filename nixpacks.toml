@@ -1,15 +1,8 @@
+# nixpacks.toml
+
 [phases.setup]
-# Setup phase for preparing the environment
-nixPkgs = ["bun", "nodejs","pnpm"]
-
-[phases.install]
-# Install phase for dependencies
-cmd = ["bun install"]
-
-[phases.build]
-# Build phase for building the application
-cmd = ["bun run build"]
+# npm is available by default, we only need bun for the start command.
+nixPkgs = ["bun"]
 
 [start]
-# Start phase for running the application
 cmd = "bun run start"
