@@ -7,7 +7,7 @@ nixPkgs = ["nodejs", "bun"]
 [phases.install]
 # THIS IS THE FIX:
 # Force the build server to use the same command that worked locally.
-cmd = "npm install --force"
+cmd = "npm install --legacy-peer-deps"
 
 [start]
 # Tell Dokploy how to run your app after it's built.
