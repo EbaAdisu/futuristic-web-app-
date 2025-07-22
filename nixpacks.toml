@@ -1,14 +1,16 @@
-[build]
-# Specify the build environment and commands
-builder = "nodejs"
 
-# Define the build command
-command = "npm install && npm build"
+[phases.setup]
+# Setup phase for preparing the environment
+nixPkgs = ["bun", nodejs]
 
-[run]
-# Specify the runtime environment and commands
-command = "npm start"
+[phases.install]
+# Install phase for dependencies
+cmd = ["bun install"]
 
-[static]
-# Define static files to serve (if applicable)
-path = "public"
+[phases.build]
+# Build phase for building the application
+cmd = ["bun run build"]
+
+[start]
+# Start phase for running the application
+cmd = "bun run start"
