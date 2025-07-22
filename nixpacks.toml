@@ -1,6 +1,6 @@
 [phases.setup]
 # Setup phase for preparing the environment
-nixPkgs = ["bun", "nodejs"]
+nixPkgs = ["bun", "nodejs","pnpm"]
 
 [phases.install]
 # Install phase for dependencies
