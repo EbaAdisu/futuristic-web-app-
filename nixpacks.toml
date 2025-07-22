@@ -3,7 +3,7 @@
 builder = "nodejs"
 
 # Define the build command
-command = "npm install && pnpm build"
+command = "npm install && npm build"
 
 [run]
 # Specify the runtime environment and commands
