@@ -3,11 +3,11 @@
 builder = "nodejs"
 
 # Define the build command
-command = "pnpm install && pnpm build"
+command = "npm install && pnpm build"
 
 [run]
 # Specify the runtime environment and commands
-command = "pnpm start"
+command = "npm start"
 
 [static]
 # Define static files to serve (if applicable)
